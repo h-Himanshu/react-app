@@ -60,7 +60,6 @@ ul li {
 }
 
 .middle {
-  background-color: violet;
   padding: 10px;
   font-size: 16px;
   grid-column: 2/3;
