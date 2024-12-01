@@ -108,3 +108,13 @@ input {
   justify-content: center;
   margin-bottom: 10px;
 }
+.image-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* grid-template-rows: minmax(repeat(1 ,1000px),auto); */ /*optional*/
+  gap: 20px;
+  justify-items: center;
+}
+h3{
+  padding-top: 5px;
+}
