@@ -26,10 +26,10 @@ const delay =(d) => {
     <>
       <div className="form-container">
         <form action="" onSubmit={handleSubmit(onSubmit)}>
-          <input  placeholder="Username" {...register("username",{required :{value:true,message:"Field cannot be empty"}})} type="text" />
+          <input className="loginpt"  placeholder="Username" {...register("username",{required :{value:true,message:"Field cannot be empty"}})} type="text" />
           {errors.username && <div>{errors.username.message}</div>}
           <br />
-          <input placeholder="Password" {...register("password",{required :{value:true,message:"Field cannot be empty"},minLength :{value :7,message : "Min length is 7"},})}  type="password" />
+          <input  className="loginpt" placeholder="Password" {...register("password",{required :{value:true,message:"Field cannot be empty"},minLength :{value :7,message : "Min length is 7"},})}  type="password" />
           {errors.password && <div>{errors.password.message}</div>}
           <br />
           {isSubmitting && <div className="loading">Loading...</div>}
