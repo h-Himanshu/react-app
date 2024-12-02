@@ -128,8 +128,8 @@ h3{
   justify-items: center;
 }
 .loginpt{
-  width: 90%;
-  margin-left: auto;
+  /* width: 90%; */
+  margin-left: 1vw;
 }
 
 .closed{
@@ -143,5 +143,24 @@ float: right;
   a{
     padding: 2px;
   }
- 
+
+  .layout {
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    /* grid-template-rows: minmax(90vh,auto); */
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  .left{
+    display: none;
+  }
+  .middle{
+    grid-column: 1/4;
+  }
+ .right{
+  /* position: static; */
+  display: flex;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  align-items: center;
+ }
 }

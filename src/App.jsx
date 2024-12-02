@@ -7,6 +7,7 @@ import Layout from './components/Layout'
 import Footer from './components/Footer'
 import Gallary from './components/Gallary'
 import Video from './components/VIdeo'
+import Feedback from './components/Feedback'
 function App() {
   const router = createBrowserRouter([
     {
@@ -23,7 +24,7 @@ function App() {
     },
     {
       path : "/feedback",
-      element:<><Navbar/><Home/></>
+      element:<><Navbar/><Layout value = {<Feedback/>} color = {"#bbb"}/></>
     },
 ])
   return (
