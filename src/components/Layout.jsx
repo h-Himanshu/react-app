@@ -3,7 +3,7 @@ import Footer from './Footer'
 import Form from './Form'
 const Layout = (props) => {
   return (
-    <>
+
     <div className="layout">
         <div className="left"></div>
         <div className="middle" style={{backgroundColor : props.color}}>{props.value}</div>
@@ -11,7 +11,6 @@ const Layout = (props) => {
         <div className="footer"><Footer/></div>
     </div>
     
-    </>
   )
 }
 

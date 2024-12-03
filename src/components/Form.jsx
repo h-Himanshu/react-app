@@ -25,7 +25,7 @@ const delay =(d) => {
   return (
     <>
       <div className="form-container">
-        <form className= "signIn" action="" onSubmit={handleSubmit(onSubmit)}>
+        <form className= "signIn" action="" onSubmit={handleSubmit(onSubmit) }>
           <input className="loginpt"  placeholder="Username" {...register("username",{required :{value:true,message:"Field cannot be empty"}})} type="text" />
           {errors.username && <div>{errors.username.message}</div>}
           <br />

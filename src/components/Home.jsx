@@ -26,6 +26,7 @@ const Home = () => {
         zone as present world consist even though it is a small country.
 
         </p>
+        <br /><br />
       <img src={exampleImage}  alt="abc" height="40%" width="100%"  />
     </div>
     </>

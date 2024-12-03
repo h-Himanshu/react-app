@@ -1,7 +1,8 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { NavLink } from 'react-router-dom'
 import Home from './Home'
 const Navbar = () => {
+  
   return (
     <div className="navbar-container">
         <nav>
